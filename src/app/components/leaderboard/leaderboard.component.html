@@ -1,0 +1,19 @@
+<button type="button" class="btn btn-primary" id="backBtn" (click)="onBack()">Back</button>
+<div class="leaderTable">
+    <table class="table table-light">
+        <thead>
+          <tr>
+            <th scope="col">Place</th>
+            <th scope="col">Username</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let result of gameresults; let i = index">
+          <tr>
+            <td>{{i+1}}</td>
+            <td>{{result.username}}</td>
+            <td>{{result.score}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

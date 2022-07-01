@@ -1,0 +1,14 @@
+.menuBord{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+.rowButton{
+    margin-top: 2%;
+}
+.rowButton button{
+    width: 90%;
+}
+h1{
+    text-align: center;
+}

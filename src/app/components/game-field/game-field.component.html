@@ -1,0 +1,19 @@
+<button type="button" class="btn btn-danger giveUp" (click)="onGiveUp()">Give Up</button>
+
+<h2 class="goodLuck">{{username}}, your Score: {{score}}</h2>
+<div class="timerDiv">
+    <p class="timer">Lime left: {{timeLeft}}</p>
+</div>
+<div class="gameField">
+    <div class="questionField">
+        <div class="questionSplit">
+            <p>{{question.questionText}}</p>
+        </div>
+        <div class="questionSplit" *ngIf="hasImageframe">
+            <img src={{getImageLink()}} alt="Image Not Found">
+        </div>
+    </div>
+    <div class="buttons" *ngFor="let answer of question.answers">
+        <button type="button" class="btn btn-outline-primary gameBtn" [id]="answer.id" [disabled]="disableButtons" (click)="onClickAnswer(answer)">{{answer.answerText}}</button>
+    </div>
+</div>

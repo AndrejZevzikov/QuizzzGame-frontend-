@@ -1,0 +1,18 @@
+
+<div class="menuBord">
+    
+    <h1>Are you ready for Quizzzz?</h1>
+    <div class="rowButton">
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onNewGame()">New Game</button>
+    </div>
+    <div class="rowButton">
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onLeaderboard()">Leaderboard</button>
+    </div>
+    <div class="rowButton">
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onAddQuestion()" *ngIf="isAdmin">Add Question</button>
+    </div>
+    <br>
+    <div class="image">
+        <img [src]="retrieveUrl" alt="Picture nor found">
+    </div>
+</div>

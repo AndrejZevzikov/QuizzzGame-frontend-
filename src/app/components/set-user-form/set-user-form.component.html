@@ -1,0 +1,13 @@
+<div class="userinput">
+<form>
+    <label id="scoreLabel">Set up your ninja name:</label>
+    <label for="usernameInput" id="userN">{{showUsername()}}</label>
+    <div class="form-row">
+        <div class="col">
+            <input type="text" class="form-control" name="usernameInput" id="usernameInput"  [(ngModel)] = "username">
+        </div>
+    </div>
+    <br>
+    <button type="button"id="createBtn" name="createBtn" class="btn btn-success" (click)="onLetsGo()">Let's Go!</button>
+</form>
+</div>
